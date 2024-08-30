@@ -1,0 +1,10 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+commonLabels:         
+  rhtap/gitops: test4-argocd 
+  janus-idp.io/tekton: test4-argocd
+  backstage.io/kubernetes-id: test4-argocd
+  backstage.io/kubernetes-namespace: rhdh-app 
+  app.kubernetes.io/part-of: test4-argocd
+resources: 
+- application-dev.yaml

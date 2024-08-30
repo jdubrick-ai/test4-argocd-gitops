@@ -1,0 +1,6 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: test4-argocd-model-config
+data:
+  MODEL_ENDPOINT: "http://test4-argocd-model-server:8001"

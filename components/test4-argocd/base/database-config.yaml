@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: test4-argocd-database-config
+data:
+  VECTORDB_HOST: "test4-argocd-database"
+  VECTORDB_PORT: ""

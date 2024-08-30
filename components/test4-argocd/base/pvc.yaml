@@ -1,0 +1,16 @@
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  labels: 
+    app.kubernetes.io/instance: test4-argocd
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: test4-argocd 
+  name: test4-argocd
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  resources:
+    requests:
+      storage: 100Gi
